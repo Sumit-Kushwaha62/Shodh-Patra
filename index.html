@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shodhpatra — Indian Electronic Theses &amp; Dissertations</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════
+     TOPBAR
+════════════════════════════════════ -->
+<div class="topbar">
+  <span class="topbar-address">📍 Shodh-Patra Centre, Sector 18A, Dwarka, New Delhi — 110 078</span>
+  <div class="topbar-right">
+    <span>📞 011-1048178</span>
+    <span>✉ <a href="mailto:info@doie.org">info@doie.org</a></span>
+    <span>|</span>
+    <a href="#">DELNET Member? Free Membership →</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+<nav class="nav">
+  <!-- Logo -->
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+        <rect x="3"  y="3"  width="7"  height="10" rx="2" fill="white" opacity="0.9"/>
+        <rect x="12" y="3"  width="7"  height="6"  rx="2" fill="white" opacity="0.6"/>
+        <rect x="3"  y="15" width="16" height="2.5" rx="1.2" fill="white" opacity="0.7"/>
+        <rect x="3"  y="19" width="10" height="2"  rx="1" fill="white" opacity="0.45"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="main">Shodh<span>patra</span></div>
+      <div class="sub">Electronic Theses &amp; Dissertations</div>
+    </div>
+  </a>
+
+  <!-- Desktop links (visible ≥900px) -->
+  <div class="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Membership <span class="arrow">▾</span></a>
+    <a href="#">Guide &amp; Tutorials <span class="arrow">▾</span></a>
+    <a href="#">Browse</a>
+  </div>
+
+  <!-- Desktop action buttons (visible ≥900px) -->
+  <div class="nav-actions">
+    <a href="#" class="btn-outline">User Registration</a>
+    <a href="#" class="btn-solid">Login →</a>
+  </div>
+
+  <!-- Hamburger (visible <900px) -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile menu">
+  <a href="#" class="mobile-nav-link active">Home</a>
+  <a href="#" class="mobile-nav-link">About Us</a>
+  <a href="#" class="mobile-nav-link">Membership</a>
+  <a href="#" class="mobile-nav-link">Guide &amp; Tutorials</a>
+  <a href="#" class="mobile-nav-link">Browse</a>
+  <div class="mobile-menu-divider"></div>
+  <div class="mobile-menu-actions">
+    <a href="#" class="btn-outline full">User Registration</a>
+    <a href="#" class="btn-solid full">Login →</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <div class="hero-inner">
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        India's Open Access Research Repository
+      </div>
+      <h1 class="hero-title">
+        Search, discover &amp;<br>
+        <span class="accent">access research</span><br>
+        freely.
+      </h1>
+      <p class="hero-subtitle">
+        E-Shodhpatra provides a platform for journal editors to deposit research
+        articles and make them available to the scholarly community —
+        open access, indexed, and preserved.
+      </p>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">3,209+</div>
+          <div class="hero-stat-lbl">Research papers</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div>
+          <div class="hero-stat-num">320+</div>
+          <div class="hero-stat-lbl">Partner journals</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div>
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-lbl">Open access</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Search card -->
+    <div class="hero-right">
+      <div class="search-card">
+        <div class="search-card-title">Search Shodhpatra</div>
+        <div class="search-card-sub">Search by journal name, paper title, or author</div>
+
+        <div class="search-row">
+          <div class="search-icon">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+              <circle cx="7" cy="7" r="5" stroke="#888" stroke-width="1.5"/>
+              <line x1="11" y1="11" x2="14.5" y2="14.5" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <input class="search-input" type="text" placeholder="Title, author, or keyword…" />
+          <button class="search-go">Search</button>
+        </div>
+
+        <div class="filter-chips">
+          <span class="chip on">All</span>
+          <span class="chip">Journals</span>
+          <span class="chip">Papers</span>
+          <span class="chip">Authors</span>
+          <span class="chip">Year</span>
+        </div>
+
+        <div class="search-quick">
+          <span class="quick-lbl">Popular:</span>
+          <div class="quick-tags">
+            <span class="quick-tag">Machine Learning</span>
+            <span class="quick-tag">Climate Science</span>
+            <span class="quick-tag">Public Health</span>
+            <span class="quick-tag">Economics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     BROWSE BY SUBJECT
+════════════════════════════════════ -->
+<section class="cats-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <h2 class="section-heading">Browse by subject</h2>
+      <a href="#" class="section-link">View all →</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card"><div class="cat-icon">🔬</div><div class="cat-name">Science &amp; Tech</div><div class="cat-count">12,400 papers</div></div>
+      <div class="cat-card"><div class="cat-icon">⚕️</div><div class="cat-name">Medicine</div><div class="cat-count">8,900 papers</div></div>
+      <div class="cat-card"><div class="cat-icon">📐</div><div class="cat-name">Engineering</div><div class="cat-count">6,500 papers</div></div>
+      <div class="cat-card"><div class="cat-icon">📚</div><div class="cat-name">Humanities</div><div class="cat-count">7,200 papers</div></div>
+      <div class="cat-card"><div class="cat-icon">⚖️</div><div class="cat-name">Law &amp; Policy</div><div class="cat-count">4,600 papers</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     MAIN SECTION: TABLE + SIDEBAR
+════════════════════════════════════ -->
+<section class="main-section">
+  <div class="section-wrap">
+    <div class="main-layout">
+
+      <!-- TABLE -->
+      <div>
+        <div class="table-card">
+
+          <!-- Header -->
+          <div class="table-card-header">
+            <div class="table-card-title">
+              Shodh Patra Search By <span>Journals / Research Papers / Author Name</span>
+            </div>
+            <div class="table-controls">
+              <div class="show-entries">
+                Show
+                <select class="show-select">
+                  <option>10</option><option>25</option><option>50</option>
+                </select>
+                entries
+              </div>
+              <div class="tbl-search">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                  <circle cx="7" cy="7" r="5" stroke="#aaa" stroke-width="1.5"/>
+                  <line x1="11" y1="11" x2="14.5" y2="14.5" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <input type="text" placeholder="Search…" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── MOBILE CARD VIEW (hidden on desktop) ── -->
+          <div class="table-mobile">
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">1</div>
+                <div class="mobile-row-title"><a href="#">Testing — Sample Entry</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">Demo Journal</span>
+                <span class="mobile-author">Testing</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">2</div>
+                <div class="mobile-row-title"><a href="#">A Concise Historical Survey of Decision-Making Theories in Educational Context</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IJMRA</span>
+                <span class="mobile-author">Theodoros Rigopoulos</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">3</div>
+                <div class="mobile-row-title"><a href="#">Innovative Approaches to Blended Learning in Higher Education</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IJMRA</span>
+                <span class="mobile-author">Ananya Krishnamurthy</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">4</div>
+                <div class="mobile-row-title"><a href="#">Synthesis and Characterization of Nano-structured TiO₂ Photocatalysts</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">Journal of Applied Chemistry</span>
+                <span class="mobile-author">Rajiv Mehta</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">5</div>
+                <div class="mobile-row-title"><a href="#">Epidemiological Patterns of Type 2 Diabetes in Urban Slum Populations</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">Indian Journal of Public Health</span>
+                <span class="mobile-author">Dr. Sunita Patel</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">6</div>
+                <div class="mobile-row-title"><a href="#">Carbon Sequestration Potential of Urban Green Corridors in Delhi NCR</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">Journal of Environmental Science</span>
+                <span class="mobile-author">Meera Iyer</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">7</div>
+                <div class="mobile-row-title"><a href="#">Deep Learning Architectures for Real-Time Speech Recognition in Indic Languages</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IETE Technical Review</span>
+                <span class="mobile-author">Vikram S. Nair</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">8</div>
+                <div class="mobile-row-title"><a href="#">Socioeconomic Impact of Microfinance on Rural Women Entrepreneurs in Rajasthan</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IJMRA</span>
+                <span class="mobile-author">Priya Sharma</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">9</div>
+                <div class="mobile-row-title"><a href="#">Evaluation of the Alcalis and Sulfur Cycle in Clinker Kilns</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IJMRA</span>
+                <span class="mobile-author">Javier Alejandro Feijoé Caraballo</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+            <div class="mobile-row">
+              <div class="mobile-row-top">
+                <div class="mobile-row-sr">10</div>
+                <div class="mobile-row-title"><a href="#">Kinetics of Quality Changes during Vacuum Frying of Germinated Soybean Seeds</a></div>
+              </div>
+              <div class="mobile-row-meta">
+                <span class="mobile-journal-badge">IJMRA</span>
+                <span class="mobile-author">Duong Thi Phuong Lien</span>
+              </div>
+              <div class="mobile-row-footer"><a href="#" class="action-btn">View ↗</a></div>
+            </div>
+
+          </div><!-- /table-mobile -->
+
+          <!-- ── DESKTOP TABLE (hidden on mobile) ── -->
+          <table class="table-desktop desktop-table">
+            <thead>
+              <tr>
+                <th>Sr.</th>
+                <th>Journal Name <span class="sort">⇅</span></th>
+                <th>Title of Research Paper <span class="sort">⇅</span></th>
+                <th>Name of Author <span class="sort">⇅</span></th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sr">1</td>
+                <td><div class="journal-name">Demo Journal</div></td>
+                <td><div class="paper-title"><a href="#">Testing — Sample Entry</a></div></td>
+                <td><div class="author-name">Testing</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">2</td>
+                <td><div class="journal-name">International Journal of Multidisciplinary Research and Analysis</div></td>
+                <td><div class="paper-title"><a href="#">A Concise Historical Survey of Decision-Making Theories in Educational Context</a></div></td>
+                <td><div class="author-name">Theodoros Rigopoulos</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">3</td>
+                <td><div class="journal-name">International Journal of Multidisciplinary Research and Analysis</div></td>
+                <td><div class="paper-title"><a href="#">Innovative Approaches to Blended Learning in Higher Education</a></div></td>
+                <td><div class="author-name">Ananya Krishnamurthy</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">4</td>
+                <td><div class="journal-name">Journal of Applied Chemistry</div></td>
+                <td><div class="paper-title"><a href="#">Synthesis and Characterization of Nano-structured TiO₂ Photocatalysts</a></div></td>
+                <td><div class="author-name">Rajiv Mehta</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">5</td>
+                <td><div class="journal-name">Indian Journal of Public Health</div></td>
+                <td><div class="paper-title"><a href="#">Epidemiological Patterns of Type 2 Diabetes in Urban Slum Populations</a></div></td>
+                <td><div class="author-name">Dr. Sunita Patel</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">6</td>
+                <td><div class="journal-name">Journal of Environmental Science</div></td>
+                <td><div class="paper-title"><a href="#">Carbon Sequestration Potential of Urban Green Corridors in Delhi NCR</a></div></td>
+                <td><div class="author-name">Meera Iyer</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">7</td>
+                <td><div class="journal-name">IETE Technical Review</div></td>
+                <td><div class="paper-title"><a href="#">Deep Learning Architectures for Real-Time Speech Recognition in Indic Languages</a></div></td>
+                <td><div class="author-name">Vikram S. Nair</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">8</td>
+                <td><div class="journal-name">International Journal of Multidisciplinary Research and Analysis</div></td>
+                <td><div class="paper-title"><a href="#">Socioeconomic Impact of Microfinance on Rural Women Entrepreneurs in Rajasthan</a></div></td>
+                <td><div class="author-name">Priya Sharma</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">9</td>
+                <td><div class="journal-name">International Journal of Multidisciplinary Research and Analysis</div></td>
+                <td><div class="paper-title"><a href="#">Evaluation of the Alcalis and Sulfur Cycle in Clinker Kilns</a></div></td>
+                <td><div class="author-name">Javier Alejandro Feijoé Caraballo</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+              <tr>
+                <td class="sr">10</td>
+                <td><div class="journal-name">International Journal of Multidisciplinary Research and Analysis</div></td>
+                <td><div class="paper-title"><a href="#">Kinetics of Quality Changes during Vacuum Frying of Germinated Soybean Seeds</a></div></td>
+                <td><div class="author-name">Duong Thi Phuong Lien</div></td>
+                <td><a href="#" class="action-btn">View ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Footer / Pagination -->
+          <div class="table-footer">
+            <div class="showing-info">Showing 1 to 10 of <strong>3,209</strong> entries</div>
+            <div class="pagination">
+              <button class="page-btn">← Prev</button>
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn">4</button>
+              <button class="page-btn">5</button>
+              <span class="page-ellipsis">…</span>
+              <button class="page-btn">321</button>
+              <button class="page-btn">Next →</button>
+            </div>
+          </div>
+
+        </div><!-- /table-card -->
+      </div><!-- /table column -->
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <!-- Latest News -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-head"><span class="dot"></span> Latest News</div>
+          <div class="sidebar-card-body">
+            <div class="news-item">
+              <div class="news-dot"></div>
+              <div><div class="news-text"><a href="#">Free Membership For DELNET Member</a></div><div class="news-date">Apr 2025</div></div>
+            </div>
+            <div class="news-item">
+              <div class="news-dot"></div>
+              <div><div class="news-text"><a href="#">42 new journals added this month</a></div><div class="news-date">Mar 2025</div></div>
+            </div>
+            <div class="news-item">
+              <div class="news-dot"></div>
+              <div><div class="news-text"><a href="#">Plagiarism check integrated for submissions</a></div><div class="news-date">Feb 2025</div></div>
+            </div>
+            <div class="news-item">
+              <div class="news-dot"></div>
+              <div><div class="news-text"><a href="#">Annual report 2024 published</a></div><div class="news-date">Jan 2025</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year Wise Growth -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-head"><span class="dot"></span> Year Wise Growth</div>
+          <div class="sidebar-card-body growth-chart">
+            <div class="growth-year-row"><span class="growth-year">2010</span><div class="growth-bar-bg"><div class="growth-bar" style="width:22%"></div></div><span class="growth-val">1171</span></div>
+            <div class="growth-year-row"><span class="growth-year">2011</span><div class="growth-bar-bg"><div class="growth-bar" style="width:29%"></div></div><span class="growth-val">1522</span></div>
+            <div class="growth-year-row"><span class="growth-year">2012</span><div class="growth-bar-bg"><div class="growth-bar" style="width:44%"></div></div><span class="growth-val">2299</span></div>
+            <div class="growth-year-row"><span class="growth-year">2013</span><div class="growth-bar-bg"><div class="growth-bar" style="width:55%"></div></div><span class="growth-val">7057</span></div>
+            <div class="growth-year-row"><span class="growth-year">2014</span><div class="growth-bar-bg"><div class="growth-bar" style="width:71%"></div></div><span class="growth-val">16782</span></div>
+            <div class="growth-year-row"><span class="growth-year">2015</span><div class="growth-bar-bg"><div class="growth-bar" style="width:85%"></div></div><span class="growth-val">11206</span></div>
+            <div class="growth-year-row"><span class="growth-year">2016</span><div class="growth-bar-bg"><div class="growth-bar" style="width:96%"></div></div><span class="growth-val">55963</span></div>
+            <div class="growth-year-row"><span class="growth-year">2017</span><div class="growth-bar-bg"><div class="growth-bar" style="width:100%"></div></div><span class="growth-val">59000</span></div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-head"><span class="dot"></span> Contact Us</div>
+          <div class="sidebar-card-body">
+            <div class="contact-block">
+              <div class="contact-name">Dr. Yogendra Gowa</div>
+              <div class="contact-role">Scientist-D (CS), Shodhpatra</div>
+              <div class="contact-info">
+                New A-134 Veer Awas, Sector 18A,<br>
+                Dwarka, New Delhi — 110 078<br>
+                📞 011-1048178 / +91-6262752166<br>
+                ✉ <a href="mailto:info@doie.org">info@doie.org</a>
+              </div>
+              <hr class="contact-divider" />
+              <div class="contact-name">Dr. Jagbir Kadyan</div>
+              <div class="contact-role">Director, Shodhpatra</div>
+              <div class="contact-info">
+                Dwarka, New Delhi — 110 078<br>
+                ✉ <a href="mailto:info@doie.org">info@doie.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /sidebar -->
+    </div><!-- /main-layout -->
+  </div><!-- /section-wrap -->
+</section>
+
+<!-- ════════════════════════════════════
+     ABOUT STRIP
+════════════════════════════════════ -->
+<div class="about-strip">
+  <div class="about-inner">
+    <div class="about-text">
+      <h2 class="about-heading">About <span>Shodh-Patra</span> Centre</h2>
+      <p class="about-desc">
+        The Shodh-Patra Centre provides a platform for journal editors to deposit their research
+        articles and make them available to the entire scholarly community in open access.
+        The repository captures, indexes, stores, disseminates, and preserves ETDs submitted by editors.
+      </p>
+      <div class="about-pills">
+        <span class="about-pill">Open Access</span>
+        <span class="about-pill">Peer Indexed</span>
+        <span class="about-pill">Plagiarism Checked</span>
+        <span class="about-pill">Permanently Archived</span>
+      </div>
+    </div>
+    <div class="about-cta-group">
+      <a href="#" class="btn-outline-white">Learn More</a>
+      <a href="#" class="btn-solid">Submit Research</a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="logo-text">Shodh<span>patra</span></div>
+        <p>India's open-access repository for electronic theses, dissertations, and research journals — capturing, indexing, and preserving scholarly knowledge.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Membership</a>
+        <a href="#">Guide &amp; Tutorials</a>
+        <a href="#">User Registration</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Browse Journals</a>
+        <a href="#">Research Papers</a>
+        <a href="#">Author Search</a>
+        <a href="#">Year-wise Index</a>
+        <a href="#">Plagiarism Policy</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-row">📍 <span>Sector 18A, Dwarka, New Delhi</span></div>
+        <div class="footer-contact-row">📞 <span>011-1048178</span></div>
+        <div class="footer-contact-row">✉ <a href="mailto:info@doie.org">info@doie.org</a></div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Shodh-Patra Centre. All rights reserved.</span>
+      <span>Developed by <a href="#">Edwin Soft Technology Solution</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
