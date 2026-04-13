@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileMenu = document.getElementById('mobileMenu');
 
   if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', function () {
+    hamburger.addEventListener('click', function (e) {
+      e.stopPropagation(); // CRITICAL: prevent outside-click from firing immediately
       const isOpen = mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open', isOpen);
       hamburger.setAttribute('aria-expanded', isOpen);
-      // Prevent body scroll when menu is open
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Close menu on outside click
     document.addEventListener('click', function (e) {
-      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+      if (mobileMenu.classList.contains('open') &&
+          !hamburger.contains(e.target) &&
+          !mobileMenu.contains(e.target)) {
         mobileMenu.classList.remove('open');
         hamburger.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
@@ -68,19 +70,15 @@ document.addEventListener('DOMContentLoaded', function () {
     searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
   }
 
-  /* ── 4. TABLE SEARCH FILTER (works on both mobile cards & desktop rows) ── */
+  /* ── 4. TABLE SEARCH FILTER ── */
   const tblInput = document.querySelector('.tbl-search input');
 
   if (tblInput) {
     tblInput.addEventListener('input', () => {
       const q = tblInput.value.toLowerCase();
-
-      // Mobile cards
       document.querySelectorAll('.mobile-row').forEach(row => {
         row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
-
-      // Desktop rows
       document.querySelectorAll('table.desktop-table tbody tr').forEach(row => {
         row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ── 6. QUICK TAGS — populate search input ── */
+  /* ── 6. QUICK TAGS ── */
   document.querySelectorAll('.quick-tag').forEach(tag => {
     tag.addEventListener('click', () => {
       if (searchInput) {
@@ -133,5 +131,33 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = '';
     }
   }, { passive: true });
+
+  /* ── 10. USER REGISTRATION — OTP SEND BUTTON ── */
+  const otpBtn = document.getElementById('sendOtpBtn');
+  const emailField = document.getElementById('regEmail');
+  if (otpBtn && emailField) {
+    otpBtn.addEventListener('click', () => {
+      const email = emailField.value.trim();
+      if (!email || !email.includes('@')) {
+        emailField.focus();
+        emailField.style.borderColor = '#E11D48';
+        setTimeout(() => { emailField.style.borderColor = ''; }, 1500);
+        return;
+      }
+      otpBtn.textContent = 'OTP Sent ✓';
+      otpBtn.disabled = true;
+      otpBtn.style.background = '#065F46';
+      alert('OTP sent to: ' + email + '\n(Check spam folder too)');
+    });
+  }
+
+  /* ── 11. LOGIN FORM ── */
+  const loginForm = document.getElementById('loginForm');
+  if (loginForm) {
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Login functionality will be connected to the backend.');
+    });
+  }
 
 });

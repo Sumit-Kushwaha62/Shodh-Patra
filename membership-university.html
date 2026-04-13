@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Membership — E-Shodhpatra</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-address">📍 Shodh-Patra Centre, Sector 18A, Dwarka, New Delhi — 110 078</span>
+  <div class="topbar-right">
+    <span>📞 011-1048178</span>
+    <span>✉ <a href="mailto:info@doie.org">info@doie.org</a></span>
+    <span>|</span>
+    <a href="#">DELNET Member? Free Membership →</a>
+  </div>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+        <rect x="3"  y="3"  width="7"  height="10" rx="2" fill="white" opacity="0.9"/>
+        <rect x="12" y="3"  width="7"  height="6"  rx="2" fill="white" opacity="0.6"/>
+        <rect x="3"  y="15" width="16" height="2.5" rx="1.2" fill="white" opacity="0.7"/>
+        <rect x="3"  y="19" width="10" height="2"  rx="1" fill="white" opacity="0.45"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="main">Shodh<span>patra</span></div>
+      <div class="sub">Electronic Theses &amp; Dissertations</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="nav-dropdown">
+      <a href="#" class="nav-dropdown-toggle active">Membership <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="membership-university.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🏛️</span>
+          <span><strong>University Membership</strong><br><small>Apply for institutional access</small></span>
+        </a>
+        <a href="membership-college.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🎓</span>
+          <span><strong>College Membership</strong><br><small>Apply for college affiliation</small></span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#" class="nav-dropdown-toggle">Guide &amp; Tutorials <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="guide.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">📖</span>
+          <span><strong>User Guide</strong><br><small>Role-based platform guides</small></span>
+        </a>
+        <!-- <a href="#" class="nav-dropdown-item">
+          <span class="dropdown-icon">🎥</span>
+          <span><strong>Video Tutorials</strong><br><small>Step-by-step walkthroughs</small></span>
+        </a> -->
+      </div>
+    </div>
+    <!-- <a href="#">Browse</a> -->
+  </div>
+  <div class="nav-actions">
+    <div class="nav-dropdown">
+      <a href="#" class="nav-action-toggle">User Registration <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu nav-dropdown-right">
+        <a href="user-registration.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">👤</span>
+          <span><strong>Shodhpatra User</strong><br><small>Author, Reader, Editor</small></span>
+        </a>
+        <a href="admin-registration.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🛡️</span>
+          <span><strong>Administrator</strong><br><small>Institutional admin access</small></span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#" class="btn-solid" style="display:inline-flex;align-items:center;gap:6px;">Login <span class="arrow" style="color:rgba(255,255,255,0.7);font-size:9px">▾</span></a>
+      <div class="nav-dropdown-menu nav-dropdown-right">
+        <a href="login.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">👤</span>
+          <span><strong>Shodhpatra User</strong><br><small>Author / Reader / Editor</small></span>
+        </a>
+        <a href="admin-login.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🛡️</span>
+          <span><strong>Administrator</strong><br><small>Institutional admin login</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile menu">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Membership</div>
+    <a href="membership-university.html" class="mobile-nav-link mobile-nav-sub active">🏛️ University Membership</a>
+    <a href="membership-college.html" class="mobile-nav-link mobile-nav-sub">🎓 College Membership</a>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Guide &amp; Tutorials</div>
+    <a href="guide.html" class="mobile-nav-link mobile-nav-sub">📖 User Guide</a>
+    <a href="#" class="mobile-nav-link mobile-nav-sub">🎥 Video Tutorials</a>
+  </div>
+  <a href="#" class="mobile-nav-link">Browse</a>
+  <div class="mobile-menu-divider"></div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">User Registration</div>
+    <a href="user-registration.html" class="mobile-nav-link mobile-nav-sub">👤 Shodhpatra User</a>
+    <a href="admin-registration.html" class="mobile-nav-link mobile-nav-sub">🛡️ Administrator</a>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Login</div>
+    <a href="login.html" class="mobile-nav-link mobile-nav-sub">👤 Shodhpatra User</a>
+    <a href="admin-login.html" class="mobile-nav-link mobile-nav-sub">🛡️ Administrator Login</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="page-breadcrumb-sep">›</span>
+      <span>Membership</span>
+      <span class="page-breadcrumb-sep">›</span>
+      <span>University</span>
+    </div>
+    <h1 class="page-hero-title">🏛️ University <span>Membership</span></h1>
+    <p class="page-hero-sub">Apply for institutional access and give your university's researchers the ability to deposit and access India's largest open-access research repository.</p>
+  </div>
+</section>
+
+<!-- MEMBERSHIP FORM CONTENT -->
+<section class="content-page">
+  <div class="content-wrap">
+    <div class="membership-layout">
+
+      <!-- Form Card -->
+      <div class="membership-form-card">
+        <h2>Apply for Membership as University</h2>
+        <p class="form-subtitle">Fill in your university's details below. Our team will review your application and get back to you within 2–3 business days.</p>
+
+        <div class="form-notice">
+          <strong>⚠ Valid information is required to register.</strong> Fields marked with <strong>*</strong> are required.
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Name of University <span class="required">*</span></label>
+          <input type="text" class="form-input" placeholder="e.g. University of Delhi" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Website (if any)</label>
+          <input type="url" class="form-input" placeholder="https://www.youruniversity.ac.in" />
+          <div class="form-helper">Optional — include https://</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number <span class="required">*</span></label>
+          <input type="tel" class="form-input" placeholder="not used for marketing" />
+          <div class="form-helper">Your number will never be shared or used for marketing.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address <span class="required">*</span></label>
+          <input type="email" class="form-input" placeholder="registrar@youruniversity.ac.in" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Address <span class="required">*</span></label>
+          <textarea class="form-textarea" placeholder="Full postal address of the university..."></textarea>
+        </div>
+
+        <button class="form-submit" type="button" onclick="alert('Registration submitted! Our team will contact you shortly.')">
+          Register University →
+        </button>
+      </div>
+
+      <!-- Info Sidebar -->
+      <div>
+        <div class="membership-info-card">
+          <div class="membership-info-head"><span class="dot"></span> University Benefits</div>
+          <div class="membership-info-body">
+            <div class="benefit-item">
+              <span class="benefit-icon">📂</span>
+              <div class="benefit-text">
+                <strong>Deposit Research</strong>
+                <span>Submit theses, dissertations, and papers directly to the repository</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🔍</span>
+              <div class="benefit-text">
+                <strong>Full-text Access</strong>
+                <span>Download and read all 2,50,000+ research papers freely</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🛡️</span>
+              <div class="benefit-text">
+                <strong>Plagiarism Detection</strong>
+                <span>Built-in plagiarism check for all submissions</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">📊</span>
+              <div class="benefit-text">
+                <strong>Analytics Dashboard</strong>
+                <span>Track downloads, citations, and research impact</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🌐</span>
+              <div class="benefit-text">
+                <strong>Global Visibility</strong>
+                <span>Your research indexed and visible to scholars worldwide</span>
+              </div>
+            </div>
+          </div>
+          <a href="membership-college.html" class="other-membership-link">
+            Looking for College Membership? <span>Apply here →</span>
+          </a>
+        </div>
+
+        <div class="sidebar-card" style="margin-top:16px;">
+          <div class="sidebar-card-head"><span class="dot"></span> Need Help?</div>
+          <div class="sidebar-card-body">
+            <div class="contact-block">
+              <div class="contact-name">Dr. Yogendra Gowa</div>
+              <div class="contact-role">Scientist-D (CS), Shodhpatra</div>
+              <div class="contact-info">
+                📞 011-1048178<br>
+                ✉ <a href="/cdn-cgi/l/email-protection#98f1f6fef7d8fcf7f1fdb6f7eaff"><span class="__cf_email__" data-cfemail="630a0d050c23070c0a064d0c1104">[info@doie.org&#160;]</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- <footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">Shodh<span>patra</span></div>
+        <p>India's open-access repository for electronic theses, dissertations, and research journals — capturing, indexing, and preserving scholarly knowledge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="membership-university.html">University Membership</a>
+        <a href="membership-college.html">College Membership</a>
+        <a href="#">User Registration</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Browse Journals</a>
+        <a href="#">Research Papers</a>
+        <a href="#">Author Search</a>
+        <a href="#">Year-wise Index</a>
+        <a href="#">Plagiarism Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-row">📍 <span>Sector 18A, Dwarka, New Delhi</span></div>
+        <div class="footer-contact-row">📞 <span>011-1048178</span></div>
+        <div class="footer-contact-row">✉ <a href="/cdn-ci/l/email-protection#61080f070e21050e08044f0e1306"><span class="__cf_email__"
+        </footer>         -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">Shodh<span>patra</span></div>
+        <p>India's open-access repository for electronic theses, dissertations, and research journals — capturing, indexing, and preserving scholarly knowledge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="membership-university.html">University Membership</a>
+        <a href="membership-college.html">College Membership</a>
+        <a href="guide.html">User Guide</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Browse Journals</a>
+        <a href="#">Research Papers</a>
+        <a href="#">Author Search</a>
+        <a href="#">Year-wise Index</a>
+        <a href="#">Plagiarism Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-row">📍 <span>Sector 18A, Dwarka, New Delhi</span></div>
+        <div class="footer-contact-row">📞 <span>011-1048178</span></div>
+        <div class="footer-contact-row">✉ <a href="mailto:info@doie.org">info@doie.org</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Shodh-Patra Centre. All rights reserved.</span>
+      <span>Developed by <a href="#">Edwin Soft Technology Solution</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

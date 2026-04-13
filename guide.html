@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide — E-Shodhpatra</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-address">📍 Shodh-Patra Centre, Sector 18A, Dwarka, New Delhi — 110 078</span>
+  <div class="topbar-right">
+    <span>📞 011-1048178</span>
+    <span>✉ <a href="mailto:info@doie.org">info@doie.org</a></span>
+    <span>|</span>
+    <a href="#">DELNET Member? Free Membership →</a>
+  </div>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+        <rect x="3"  y="3"  width="7"  height="10" rx="2" fill="white" opacity="0.9"/>
+        <rect x="12" y="3"  width="7"  height="6"  rx="2" fill="white" opacity="0.6"/>
+        <rect x="3"  y="15" width="16" height="2.5" rx="1.2" fill="white" opacity="0.7"/>
+        <rect x="3"  y="19" width="10" height="2"  rx="1" fill="white" opacity="0.45"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="main">Shodh<span>patra</span></div>
+      <div class="sub">Electronic Theses &amp; Dissertations</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="nav-dropdown">
+      <a href="#" class="nav-dropdown-toggle">Membership <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="membership-university.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🏛️</span>
+          <span><strong>University Membership</strong><br><small>Apply for institutional access</small></span>
+        </a>
+        <a href="membership-college.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🎓</span>
+          <span><strong>College Membership</strong><br><small>Apply for college affiliation</small></span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#" class="nav-dropdown-toggle active">Guide &amp; Tutorials <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="guide.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">📖</span>
+          <span><strong>User Guide</strong><br><small>Role-based platform guides</small></span>
+        </a>
+        <!-- <a href="#" class="nav-dropdown-item">
+          <span class="dropdown-icon">🎥</span>
+          <span><strong>Video Tutorials</strong><br><small>Step-by-step walkthroughs</small></span>
+        </a> -->
+      </div>
+    </div>
+    <!-- <a href="#">Browse</a> -->
+  </div>
+  <div class="nav-actions">
+    <div class="nav-dropdown">
+      <a href="#" class="nav-action-toggle">User Registration <span class="arrow">▾</span></a>
+      <div class="nav-dropdown-menu nav-dropdown-right">
+        <a href="user-registration.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">👤</span>
+          <span><strong>Shodhpatra User</strong><br><small>Author, Reader, Editor</small></span>
+        </a>
+        <a href="admin-registration.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🛡️</span>
+          <span><strong>Administrator</strong><br><small>Institutional admin access</small></span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="#" class="btn-solid" style="display:inline-flex;align-items:center;gap:6px;">Login <span class="arrow" style="color:rgba(255,255,255,0.7);font-size:9px">▾</span></a>
+      <div class="nav-dropdown-menu nav-dropdown-right">
+        <a href="login.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">👤</span>
+          <span><strong>Shodhpatra User</strong><br><small>Author / Reader / Editor</small></span>
+        </a>
+        <a href="admin-login.html" class="nav-dropdown-item">
+          <span class="dropdown-icon">🛡️</span>
+          <span><strong>Administrator</strong><br><small>Institutional admin login</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile menu">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Membership</div>
+    <a href="membership-university.html" class="mobile-nav-link mobile-nav-sub">🏛️ University Membership</a>
+    <a href="membership-college.html" class="mobile-nav-link mobile-nav-sub">🎓 College Membership</a>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Guide &amp; Tutorials</div>
+    <a href="guide.html" class="mobile-nav-link mobile-nav-sub active">📖 User Guide</a>
+    <a href="#" class="mobile-nav-link mobile-nav-sub">🎥 Video Tutorials</a>
+  </div>
+  <a href="#" class="mobile-nav-link">Browse</a>
+  <div class="mobile-menu-divider"></div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">User Registration</div>
+    <a href="user-registration.html" class="mobile-nav-link mobile-nav-sub">👤 Shodhpatra User</a>
+    <a href="admin-registration.html" class="mobile-nav-link mobile-nav-sub">🛡️ Administrator</a>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-group-label">Login</div>
+    <a href="login.html" class="mobile-nav-link mobile-nav-sub">👤 Shodhpatra User</a>
+    <a href="admin-login.html" class="mobile-nav-link mobile-nav-sub">🛡️ Administrator Login</a>
+  </div>
+</div>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb"><a href="index.html">Home</a><span class="page-breadcrumb-sep">›</span><span>Guide & Tutorials</span><span>User Guide</span></div>
+    <h1 class="page-hero-title">📖 User <span>Guide</span></h1>
+    <p class="page-hero-sub">Step-by-step guides for every role on the E-Shodhpatra platform — Authors, Readers, Premium Users, and Editors.</p>
+  </div>
+</section>
+<section class="content-page">
+  <div class="content-wrap">
+    <div class="guide-grid">
+
+      <!-- Author -->
+      <div class="guide-role-card">
+        <div class="guide-role-head">
+          <span class="guide-role-icon">✍️</span>
+          <div>
+            <div class="guide-role-title">Author</div>
+            <div class="guide-role-sub">Submit and manage research papers</div>
+          </div>
+        </div>
+        <div class="guide-role-body">
+          <div class="guide-step"><span class="guide-step-num">1</span><span class="guide-step-text">Registration / Login — Create your account or sign in</span></div>
+          <div class="guide-step"><span class="guide-step-num">2</span><span class="guide-step-text">Validation of Account — Verify via email OTP</span></div>
+          <div class="guide-step"><span class="guide-step-num">3</span><span class="guide-step-text">Submission of Content / Metadata by Registered User</span></div>
+        </div>
+      </div>
+
+      <!-- Reader -->
+      <div class="guide-role-card">
+        <div class="guide-role-head">
+          <span class="guide-role-icon">📖</span>
+          <div>
+            <div class="guide-role-title">Reader</div>
+            <div class="guide-role-sub">Browse and read research content</div>
+          </div>
+        </div>
+        <div class="guide-role-body">
+          <div class="guide-step"><span class="guide-step-num">1</span><span class="guide-step-text">Registration / Login — Create your account or sign in</span></div>
+          <div class="guide-step"><span class="guide-step-num">2</span><span class="guide-step-text">Search Content — Use filters to find papers by topic or author</span></div>
+          <div class="guide-step"><span class="guide-step-num">3</span><span class="guide-step-text">Read Content / Metadata by Registered User</span></div>
+        </div>
+      </div>
+
+      <!-- Premium User -->
+      <div class="guide-role-card">
+        <div class="guide-role-head">
+          <span class="guide-role-icon">⭐</span>
+          <div>
+            <div class="guide-role-title">Premium User</div>
+            <div class="guide-role-sub">Full download access to all content</div>
+          </div>
+        </div>
+        <div class="guide-role-body">
+          <div class="guide-step"><span class="guide-step-num">1</span><span class="guide-step-text">Registration / Login — Create your account or sign in</span></div>
+          <div class="guide-step"><span class="guide-step-num">2</span><span class="guide-step-text">Validation of Account — Verify via email OTP</span></div>
+          <div class="guide-step"><span class="guide-step-num">3</span><span class="guide-step-text">Read Content / Metadata by Registered User</span></div>
+          <div class="guide-step"><span class="guide-step-num">4</span><span class="guide-step-text">Download Content — Save papers as PDF</span></div>
+        </div>
+      </div>
+
+      <!-- Editor -->
+      <div class="guide-role-card">
+        <div class="guide-role-head">
+          <span class="guide-role-icon">🖊️</span>
+          <div>
+            <div class="guide-role-title">Editor</div>
+            <div class="guide-role-sub">Manage journals and research submissions</div>
+          </div>
+        </div>
+        <div class="guide-role-body">
+          <div class="guide-step"><span class="guide-step-num">1</span><span class="guide-step-text">Registration / Login — Create your account or sign in</span></div>
+          <div class="guide-step"><span class="guide-step-num">2</span><span class="guide-step-text">Validation of Account — Verify your editor credentials</span></div>
+          <div class="guide-step"><span class="guide-step-num">3</span><span class="guide-step-text">Add new Journals — Create journal entries in the system</span></div>
+          <div class="guide-step"><span class="guide-step-num">4</span><span class="guide-step-text">Submission of Research Paper — Upload and manage content</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">Shodh<span>patra</span></div>
+        <p>India's open-access repository for electronic theses, dissertations, and research journals — capturing, indexing, and preserving scholarly knowledge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="membership-university.html">University Membership</a>
+        <a href="membership-college.html">College Membership</a>
+        <a href="guide.html">User Guide</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Browse Journals</a>
+        <a href="#">Research Papers</a>
+        <a href="#">Author Search</a>
+        <a href="#">Year-wise Index</a>
+        <a href="#">Plagiarism Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-row">📍 <span>Sector 18A, Dwarka, New Delhi</span></div>
+        <div class="footer-contact-row">📞 <span>011-1048178</span></div>
+        <div class="footer-contact-row">✉ <a href="mailto:info@doie.org">info@doie.org</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Shodh-Patra Centre. All rights reserved.</span>
+      <span>Developed by <a href="#">Edwin Soft Technology Solution</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
